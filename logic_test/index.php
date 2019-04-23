@@ -143,10 +143,7 @@ $numRows = $result_data->num_rows;
       var children = parseInt($('#children').val());
       var infans = parseInt($('#infans').val());
       var guests = adult + children;
-      // alert(guests);
-      // alert(adult);
-      // alert(children);
-      // alert(infans);
+      
       if(ic == ''){
         alert('Please fill in the data');
         return false;
@@ -214,23 +211,6 @@ $numRows = $result_data->num_rows;
           location.reload();
         }
       });
-
-      // var x = confirm('Sure to remove?');
-
-      // if(x){
-      //   $.ajax({
-      //     url: 'booking.php?action=del',
-      //     method: 'POST',
-      //     data: {
-      //       idbook: idbook
-      //     },
-      //     success: function(data){
-      //       location.reload();
-      //     }
-      //   });
-      // }else{
-      //   return false;
-      // }
     }
   </script>
 
